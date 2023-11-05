@@ -34,11 +34,9 @@ This is just a simple script that will read through a list of area codes (privat
 011-0000001 
 
 ### Math
-The Cartesian product is as follows; since we have 12 3-digit area codes, we multiply this 7-dimensional space (7 digits remaining after the prefix) by 12 to account for the 12 fixed starting points provided by each area code. Therefore, the entire combinatorial space encompassing all 12 area codes is calculated as 12×10712×107.
+The Cartesian product is as follows; since we have 12 3-digit area codes, we multiply this 7-dimensional space (7 digits remaining after the prefix) by 12 to account for the 12 fixed starting points provided by each area code. Therefore, the entire combinatorial space encompassing all 12 area codes is calculated as 12×10^7.
 
-Another way to visualize this:
 
-![image](https://github.com/rubileandro/Python-Projects/assets/93342175/1568d887-b456-4ffc-a23d-0b4609dff366)
 
  
 ### Considerations
