@@ -24,6 +24,9 @@ Here are the output metrics:
 - Size of 'numbers.txt': 1.3GB
 - Time taken: 3 minutes and 48 seconds
 
+  ![2023-11-05 08_23_02-telephone_number – main py](https://github.com/rubileandro/Python-Projects/assets/93342175/0b7a8fcf-d1e4-4133-b322-660eaa3e1c96)
+
+
 This was run on a laptop on battery power with Ryzen 7, RTX3050, 2021 model.
 
 ### How?
