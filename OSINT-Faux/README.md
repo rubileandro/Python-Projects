@@ -17,7 +17,7 @@ The National Records of Scotland provide full lists of babies’ first names for
 - 2010-2019
 
 I had 41 years of data in total from 46 separate `.csv` files. I combined all the data into one new `.csv` using the code in the `csv_append.py` file.
-I have included the appended `.csv` [here]().
+I have included the appended `.csv` [here](https://github.com/rubileandro/Python-Projects/blob/5f9a46961e6653f8a895808341b252e70bcb0036/OSINT-Faux/scottish_first_names.csv).
 
 I then cleaned up the data so that I had a single name on each row to work with. 
 
