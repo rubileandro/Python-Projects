@@ -25,24 +25,28 @@ After removing duplicates and empty rows, I was left with 64,849 rows.
 
 It is interesting to note that out of forty-one years of data, there are only 64,849 unique names.
 
-For this project I converted my `.csv` into a Python Set format for the names list, which are used to do the reverse lookup, because of the Constant Time Complexity of (O(1)) – meaning that the time it takes to complete the algo-rhythm is independent of the size of the list. It will take the same amount of time to perform a lookup a username if there are 60 or 60,000 names. Additionally, I had no other values and there weren’t any duplicates, so using the Python Set made sense.
+For this project I converted my `.csv` into a Python Set format for the names list, which are used to do the reverse lookup, because of the Constant Time Complexity of (O(1)) – meaning that the time it takes to complete the algo-rhythm is independent of the size of the list. It will take the same amount of time to perform a lookup of a username if there are 60 or 60,000 names. Additionally, I had no other values and there weren’t any duplicates, so using the Python Set made sense.
  
 ### NAME DIVERSITY INDEX (NDI)
 Out of curiosity, I looked up the population of Scotland in 2019 and it was 5.46 million. 
 
 To work out how many people share on average the same name we can use the NDI to calculated roughly how many people in the population share the same name:
-64,584  / 5.46 = 0.01
-
-As an estimate that there is roughly one unique name for every 100 people in Scotland.
+64,584  / 5,46 million = 0.0118
 
 This means that unique names account for 1.18% of the total population in 2019. For every 100 people in the population, there are approximately 1.18 unique names.
+
 There are other databases such as the [United States Department of Social Security](https://www.ssa.gov/oact/babynames/limits.html) and the [United States Census Bureau](https://www.census.gov/topics/population/genealogy/data/2000_surnames.html) as well as paid databases but I chose this as it was a manageable size to test and free and publicly available as well as being formatted consistently across the years, so it was easy to work with.
 
 ### THE PROGRAM 
 I limited the username to 11 digits, as the jump from 11 to 12 characters is an increase in permutation that is gargantuan.
-For a username with 11 characters, the number of permutations would be 11! (39,916,800), for or 12 characters, it would be 12! (479,001,600). The factorial grows extremely quickly with each additional character.
+For a username with 11 characters, the number of permutations would be 11! (39,916,800), for 12 characters, it would be 12! (479,001,600). The factorial grows extremely quickly with each additional character.
 
-In earlier iterations of this program, I noticed that if there were multiple matches of the anagram, then it would only print out one match. For instances of several matches and to catch all of them, I got the results to output to a .txt file showing any palindrome and any anagram matches. This list of matched could then be used for further reconnaissance and OSINT operations.
+In earlier iterations of this program, I noticed that if there were multiple matches of the anagram, then it would only print out one match. For instances of several matches and to catch all of them, I got the results to output to a `.txt` file showing any palindrome and any anagram matches. This list of matches could then be used for further OSINT searches.
+
+Here is a a screenshot of what the output looks like:
+![2023-11-11 15_58_11-main py - fuex_osint - Visual Studio Code](https://github.com/rubileandro/Python-Projects/assets/93342175/ef01bb0d-2ebd-4f04-a6c4-f44c2e4aadd2)
+
+
 
 I ran this on a laptop on battery power that is medium tier and it performed it instantaneously. I couldn’t detect any lag and it felt like it took less than half a second.
 
